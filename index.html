@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justice</title>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/dc56b60fc7.js" crossorigin="anonymous"></script>
+
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- tailwind css -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <style>
+    .fonts-poppins{
+       font-family: "Poppins", serif;
+       font-weight: 400;
+       font-style: normal;
+       }
+    .fonts-eb-garamond{
+      font-family: "EB Garamond", serif;
+      font-weight:400;
+      font-style: normal;
+     }
+  </style>
+
+<!-- Custom property -->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'color-primary':'#B68C5A',
+          dark3:'#707070',
+          dark2:'#414040',
+          dark6:'#E7E7E7',
+          liner:'#111111',
+        }
+      }
+    }
+  }
+</script>
 </head>
 <body>
-    
+
+  <!-- header sectin start -->
+  <header>
+
+    <!-- navber start -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start space-x-4">
+        <div class=""><img src="./images/Group 1.png" alt=""></div>
+        <a class="font-extrabold text-dark2 text-4xl">Justice</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 font-normal text-base text-dark3">
+          <li><a>Home</a></li>
+          <li><a>Services <i class="fa-solid fa-greater-than"></i></a></li>
+          <li><a>Cases <i class="fa-solid fa-greater-than"></i></a></li>
+          <li><a href="">Blog <i class="fa-solid fa-greater-than"></i></a></i>
+          <li><a>Contact Us <i class="fa-solid fa-greater-than"></i></a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn bg-color-primary">Free Consultation</a>
+      </div>
+    </div>
+
+    <!-- banner part is start -->
+    <div class="carousel w-full ">
+
+      <!--card first start  -->
+      <div id="slide1" class="carousel-item relative w-full hero min-h-screen z-10" style="background-image: url(./images/banner.png)">
+        <div class="text-center space-y-10 ">
+          <h1 class="font-extrabold text-5xl text-[#FFFFFF] space-y-5">We Provide Effective <br> Legal Solutions</h1>
+          <p class="font-normal text-base text-dark6">There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration in some form, by injected humour.</p>
+          <input class="h-16 rounded-lg text-center w-1/2 text-[#A0A0A0]" type="text" placeholder="Search your services">
+          <button class="btn bg-color-primary border-none h-16 py-4 px-9 text-white">Search</button>
+        </div>
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+        <div class="bg-gradient-to-t from-[#111111] w-full h-full -z-10"></div>
+      </div>
+      <!-- card second start -->
+      <div id="slide2" class="carousel-item relative w-full">
+        <img
+          src="./images/banner2.jpg"
+          class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="btn">Md Imran Hasan</h1>
+  </main>
 </body>
 </html>
