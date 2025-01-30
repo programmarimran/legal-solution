@@ -54,10 +54,10 @@
   }
 </script>
 </head>
-<body class="fonts-poppins">
+<body class="fonts-poppins max-w-screen-2xl mx-auto">
 
   <!-- header sectin start -->
-  <header class="w-[95%] mx-auto">
+  <header class="max-w-screen-2xl w-[95%] mx-auto">
 
     <!-- navber start -->
     <div class="navbar bg-base-100">
@@ -80,31 +80,22 @@
     </div>
 
     <!-- banner part is start -->
-    <div class="carousel w-full mb-[120px]">
+    <div>
+      <div class="relative">
+        <img class="object-cover w-full" src="./images/banner.png" alt="image-banner">
 
-      <!--card first start  -->
-      <div id="slide1" class="carousel-item relative w-full hero min-h-screen z-10" style="background-image: url(./images/banner.png)">
-        <div class="text-center space-y-10 ">
-          <h1 class="fonts-eb-garamond font-extrabold text-5xl text-[#FFFFFF] space-y-5">We Provide Effective <br> Legal Solutions</h1>
-          <p class="font-normal text-base text-dark6">There are many variations of passages of Lorem Ipsum available, <br> but the majority have suffered alteration in some form, by injected humour.</p>
-          <input class="h-16 rounded-lg text-center w-1/2 text-[#A0A0A0]" type="text" placeholder="Search your services">
-          <button class="btn bg-color-primary border-none h-16 py-4 px-9 text-white">Search</button>
-        </div>
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
-        </div>
-        <div class="bg-gradient-to-t from-[#111111] w-full h-full -z-10"></div>
-      </div>
-      <!-- card second start -->
-      <div id="slide2" class="carousel-item relative w-full">
-        <img
-          src="./images/banner2.jpg"
-          class="w-full" />
-        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
-        </div>
+              <div class="text-center flex flex-col items-center justify-center absolute bg-gradient-to-t from-dark1 inset-0">
+                <div>
+                  <h1 class="text-5xl font-bold text-white fonts-eb-garamond">We Provide Effective  <br>Legal Solutions</h1>
+                <p class="py-6 text-dark5">
+                  There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.
+                </p>
+                <input type="text" placeholder="Search your servce" class=" h-[48px] w-3/5 rounded-xl placeholder:pl-11">
+                <button class="btn btn-success bg-color-primary border-none hover:bg-color-primary">Search</button>
+                </div>
+              </div>
+              
+
       </div>
     </div>
   </header>
@@ -214,6 +205,9 @@
        </section>
      </section>
 
+      <!-- What Our Client Say -->
+     
+
      <!--Asked Any Questions-->
       <section class="mb-[120px] w-[95%] mx-auto">
 
@@ -223,8 +217,8 @@
         <p class="font-normal text-base text-dark3 text-center w-3/4 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
         </div>
 
-        <section class="grid md:grid-cols-2 gap-6 grid-cols-1 ">
-          <div class="space-y-5">
+        <section class="flex flex-1 gap-4 justify-between ">
+          <div class="space-y-2">
             <div class="rounded-none collapse collapse-plus bg-base-200">
               <input type="radio" name="my-accordion-3" checked="checked" />
               <div class="collapse-title text-xl font-medium"> 1. Are application fee waivers available?</div>
@@ -254,7 +248,7 @@
               </div>
             </div>
           </div>
-          <div class="lg:w-3/4 md:[65%] mx-auto">
+          <div class="w-full">
             <img src="./images/faq.png" alt="">
           </div>
         </section>
